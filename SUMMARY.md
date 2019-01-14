@@ -1,5 +1,7 @@
-# SUMMARY
-* [安装](book/install/getting-started.md)
+# Summary
+
+* [Introduction](README.md)
+* [安装/入门](book/getting-started.md)
 * [快速上手](book/usage.md)
 * [类型关联](book/associations.md)
 * [生命周期Hook](book/hooks.md)
@@ -16,3 +18,4 @@
 * 升级更新
     * [升级到v4](book/upgrade-to-v4.md)
     * [升级到v4](book/upgrade-to-v5.md)
+

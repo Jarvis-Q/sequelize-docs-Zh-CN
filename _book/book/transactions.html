@@ -1,0 +1,660 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>事务 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="scopes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    安装/入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="usage.html">
+            
+                <a href="usage.html">
+            
+                    
+                    快速上手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="associations.html">
+            
+                <a href="associations.html">
+            
+                    
+                    类型关联
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="hooks.html">
+            
+                <a href="hooks.html">
+            
+                    
+                    生命周期Hook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="instances.html">
+            
+                <a href="instances.html">
+            
+                    
+                    实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="legacy.html">
+            
+                <a href="legacy.html">
+            
+                    
+                    使用遗留表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="migrations.html">
+            
+                <a href="migrations.html">
+            
+                    
+                    迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    模型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="models/definition.html">
+            
+                <a href="models/definition.html">
+            
+                    
+                    模型定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="models/usage.html">
+            
+                <a href="models/usage.html">
+            
+                    
+                    模型使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="querying.html">
+            
+                <a href="querying.html">
+            
+                    
+                    查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="raw-queries.html">
+            
+                <a href="raw-queries.html">
+            
+                    
+                    原始查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="scopes.html">
+            
+                <a href="scopes.html">
+            
+                    
+                    作用域
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="transactions.html">
+            
+                <a href="transactions.html">
+            
+                    
+                    事务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" >
+            
+                <span>
+            
+                    
+                    升级更新
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="upgrade-to-v4.html">
+            
+                <a href="upgrade-to-v4.html">
+            
+                    
+                    升级到v4
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14.2" data-path="upgrade-to-v5.html">
+            
+                <a href="upgrade-to-v5.html">
+            
+                    
+                    升级到v4
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >事务</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="transactions---&#x4E8B;&#x52A1;">Transactions - &#x4E8B;&#x52A1;</h1>
+<p>Sequelize &#x652F;&#x6301;&#x4E24;&#x79CD;&#x4F7F;&#x7528;&#x4E8B;&#x52A1;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ul>
+<li>&#x4E00;&#x4E2A;&#x5C06;&#x6839;&#x636E; promise &#x94FE;&#x7684;&#x7ED3;&#x679C;&#x81EA;&#x52A8;&#x63D0;&#x4EA4;&#x6216;&#x56DE;&#x6EDA;&#x4E8B;&#x52A1;&#xFF0C;&#xFF08;&#x5982;&#x679C;&#x542F;&#x7528;&#xFF09;&#x7528;&#x56DE;&#x8C03;&#x5C06;&#x8BE5;&#x4E8B;&#x52A1;&#x4F20;&#x9012;&#x7ED9;&#x6240;&#x6709;&#x8C03;&#x7528;</li>
+<li>&#x800C;&#x53E6;&#x4E00;&#x4E2A; leave committing&#xFF0C;&#x56DE;&#x6EDA;&#x5E76;&#x5C06;&#x4E8B;&#x52A1;&#x4F20;&#x9012;&#x7ED9;&#x7528;&#x6237;&#x3002;</li>
+</ul>
+<p>&#x4E3B;&#x8981;&#x533A;&#x522B;&#x5728;&#x4E8E;&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#xFF0C;&#x5BF9;&#x975E;&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#x800C;&#x8A00;&#x671F;&#x671B; promise &#x8FD4;&#x56DE;&#x4E00;&#x4E2A; promise &#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+<h2 id="&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#xFF08;auto-callback&#xFF09;">&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#xFF08;auto-callback&#xFF09;</h2>
+<p>&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#x81EA;&#x52A8;&#x5904;&#x7406;&#x63D0;&#x4EA4;&#x6216;&#x56DE;&#x6EDA;&#x4E8B;&#x52A1;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5C06;&#x56DE;&#x8C03;&#x4F20;&#x9012;&#x7ED9; <code>sequelize.transaction</code> &#x6765;&#x542F;&#x52A8;&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#x3002;</p>
+<p>&#x6CE8;&#x610F;&#x56DE;&#x4F20;&#x4F20;&#x9012;&#x7ED9; <code>transaction</code> &#x7684;&#x56DE;&#x8C03;&#x662F;&#x5426;&#x662F;&#x4E00;&#x4E2A; promise &#x94FE;&#xFF0C;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x5730;&#x8C03;&#x7528;<code>t.commit&#xFF08;&#xFF09;</code>&#x6216;  <code>t.rollback()</code>&#x3002; &#x5982;&#x679C;&#x8FD4;&#x56DE;&#x94FE;&#x4E2D;&#x7684;&#x6240;&#x6709; promise &#x90FD;&#x5DF2;&#x6210;&#x529F;&#x89E3;&#x51B3;&#xFF0C;&#x5219;&#x4E8B;&#x52A1;&#x88AB;&#x63D0;&#x4EA4;&#x3002; &#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6216;&#x51E0;&#x4E2A; promise &#x88AB;&#x62D2;&#x7EDD;&#xFF0C;&#x4E8B;&#x52A1;&#x5C06;&#x56DE;&#x6EDA;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">return</span> sequelize.transaction(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">t</span>) </span>{
+
+  <span class="hljs-comment">// &#x5728;&#x8FD9;&#x91CC;&#x94FE;&#x63A5;&#x60A8;&#x7684;&#x6240;&#x6709;&#x67E5;&#x8BE2;&#x3002; &#x786E;&#x4FDD;&#x4F60;&#x8FD4;&#x56DE;&#x4ED6;&#x4EEC;&#x3002;</span>
+  <span class="hljs-keyword">return</span> User.create({
+    firstName: <span class="hljs-string">&apos;Abraham&apos;</span>,
+    lastName: <span class="hljs-string">&apos;Lincoln&apos;</span>
+  }, {transaction: t}).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">user</span>) </span>{
+    <span class="hljs-keyword">return</span> user.setShooter({
+      firstName: <span class="hljs-string">&apos;John&apos;</span>,
+      lastName: <span class="hljs-string">&apos;Boothe&apos;</span>
+    }, {transaction: t});
+  });
+
+}).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">result</span>) </span>{
+  <span class="hljs-comment">// &#x4E8B;&#x52A1;&#x5DF2;&#x88AB;&#x63D0;&#x4EA4;</span>
+  <span class="hljs-comment">// result &#x662F; promise &#x94FE;&#x8FD4;&#x56DE;&#x5230;&#x4E8B;&#x52A1;&#x56DE;&#x8C03;&#x7684;&#x7ED3;&#x679C;</span>
+}).catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{
+  <span class="hljs-comment">// &#x4E8B;&#x52A1;&#x5DF2;&#x88AB;&#x56DE;&#x6EDA;</span>
+  <span class="hljs-comment">// err &#x662F;&#x62D2;&#x7EDD; promise &#x94FE;&#x8FD4;&#x56DE;&#x5230;&#x4E8B;&#x52A1;&#x56DE;&#x8C03;&#x7684;&#x9519;&#x8BEF;</span>
+});
+</code></pre>
+<h3 id="&#x629B;&#x51FA;&#x9519;&#x8BEF;&#x5230;&#x56DE;&#x6EDA;">&#x629B;&#x51FA;&#x9519;&#x8BEF;&#x5230;&#x56DE;&#x6EDA;</h3>
+<p>&#x4F7F;&#x7528;&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#x65F6;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5; <em><strong>&#x6C38;&#x4E0D;</strong></em> &#x624B;&#x52A8;&#x63D0;&#x4EA4;&#x6216;&#x56DE;&#x6EDA;&#x4E8B;&#x52A1;&#x3002; &#x5982;&#x679C;&#x6240;&#x6709;&#x67E5;&#x8BE2;&#x90FD;&#x6210;&#x529F;&#xFF0C;&#x4F46;&#x60A8;&#x4ECD;&#x7136;&#x5E0C;&#x671B;&#x56DE;&#x6EDA;&#x4E8B;&#x52A1;&#xFF08;&#x4F8B;&#x5982;&#x56E0;&#x4E3A;&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#xFF09;&#xFF0C;&#x5219;&#x5E94;&#x8BE5;&#x629B;&#x51FA;&#x4E00;&#x4E2A;&#x9519;&#x8BEF;&#x6765;&#x65AD;&#x5F00;&#x548C;&#x62D2;&#x7EDD;&#x94FE;&#x63A5;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">return</span> sequelize.transaction(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">t</span>) </span>{
+  <span class="hljs-keyword">return</span> User.create({
+    firstName: <span class="hljs-string">&apos;Abraham&apos;</span>,
+    lastName: <span class="hljs-string">&apos;Lincoln&apos;</span>
+  }, {transaction: t}).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">user</span>) </span>{
+    <span class="hljs-comment">// &#x67E5;&#x8BE2;&#x6210;&#x529F;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x4ECD;&#x7136;&#x60F3;&#x56DE;&#x6EDA;&#xFF01;</span>
+    <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Error</span>();
+  });
+});
+</code></pre>
+<h3 id="&#x81EA;&#x52A8;&#x5C06;&#x4E8B;&#x52A1;&#x4F20;&#x9012;&#x7ED9;&#x6240;&#x6709;&#x67E5;&#x8BE2;">&#x81EA;&#x52A8;&#x5C06;&#x4E8B;&#x52A1;&#x4F20;&#x9012;&#x7ED9;&#x6240;&#x6709;&#x67E5;&#x8BE2;</h3>
+<p>&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#xFF0C;&#x4E8B;&#x52A1;&#x4ECD;&#x7136;&#x662F;&#x624B;&#x52A8;&#x4F20;&#x9012;&#x7684;&#xFF0C;&#x901A;&#x8FC7;&#x4F20;&#x9012; <code>{transaction:t}</code> &#x4F5C;&#x4E3A;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x3002; &#x8981;&#x81EA;&#x52A8;&#x5C06;&#x4E8B;&#x52A1;&#x4F20;&#x9012;&#x7ED9;&#x6240;&#x6709;&#x67E5;&#x8BE2;&#xFF0C;&#x60A8;&#x5FC5;&#x987B;&#x5B89;&#x88C5; <a href="https://github.com/othiym23/node-continuation-local-storage" target="_blank">continuation local storage</a> (CLS) &#x6A21;&#x5757;&#xFF0C;&#x5E76;&#x5728;&#x60A8;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> cls = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;continuation-local-storage&apos;</span>),
+    namespace = cls.createNamespace(<span class="hljs-string">&apos;my-very-own-namespace&apos;</span>);
+</code></pre>
+<p>&#x8981;&#x542F;&#x7528;CLS&#xFF0C;&#x60A8;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x4F7F;&#x7528;sequelize&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x6765;&#x544A;&#x8BC9;Sequelize&#x8981;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> Sequelize = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sequelize&apos;</span>);
+Sequelize.useCLS(namespace);
+
+<span class="hljs-keyword">new</span> Sequelize(....);
+</code></pre>
+<p>&#x8BF7;&#x6CE8;&#x610F;&#xFF0C; <code>useCLS()</code>  &#x65B9;&#x6CD5;&#x5728; <em>&#x6784;&#x9020;&#x51FD;&#x6570;</em> &#x4E0A;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x5728; sequelize &#x7684;&#x5B9E;&#x4F8B;&#x4E0A;&#x3002; &#x8FD9;&#x610F;&#x5473;&#x7740;&#x6240;&#x6709;&#x5B9E;&#x4F8B;&#x5C06;&#x5171;&#x4EAB;&#x76F8;&#x540C;&#x7684;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#xFF0C;&#x5E76;&#x4E14; CLS &#x662F;&#x5168;&#x90E8;&#x6216;&#x5168;&#x65E0;&#x65B9;&#x5F0F; - &#x4F60;&#x4E0D;&#x80FD;&#x4EC5;&#x5728;&#x67D0;&#x4E9B;&#x5B9E;&#x4F8B;&#x4E2D;&#x542F;&#x7528;&#x5B83;&#x3002;</p>
+<p>CLS &#x7684;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x5C31;&#x50CF;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x56DE;&#x8C03;&#x7684;&#x672C;&#x5730;&#x7EBF;&#x7A0B;&#x5B58;&#x50A8;&#x3002; &#x8FD9;&#x5728;&#x5B9E;&#x8DF5;&#x4E2D;&#x610F;&#x5473;&#x7740;&#x4E0D;&#x540C;&#x7684;&#x56DE;&#x8C03;&#x94FE;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x4F7F;&#x7528; CLS &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x6765;&#x8BBF;&#x95EE;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x3002; &#x5F53;&#x542F;&#x7528; CLS &#x65F6;&#xFF0C;&#x521B;&#x5EFA;&#x65B0;&#x4E8B;&#x52A1;&#x65F6;&#xFF0C;Sequelize &#x5C06;&#x5728;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E0A;&#x8BBE;&#x7F6E; <code>transaction</code> &#x5C5E;&#x6027;&#x3002; &#x7531;&#x4E8E;&#x56DE;&#x8C03;&#x94FE;&#x4E2D;&#x8BBE;&#x7F6E;&#x7684;&#x53D8;&#x91CF;&#x5BF9;&#x8BE5;&#x94FE;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x5E76;&#x53D1;&#x4E8B;&#x52A1;&#xFF1A;</p>
+<pre><code class="lang-js">sequelize.transaction(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">t1</span>) </span>{
+  namespace.get(<span class="hljs-string">&apos;transaction&apos;</span>) === t1; <span class="hljs-comment">// true</span>
+});
+
+sequelize.transaction(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">t2</span>) </span>{
+  namespace.get(<span class="hljs-string">&apos;transaction&apos;</span>) === t2; <span class="hljs-comment">// true</span>
+});
+</code></pre>
+<p>&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x4E0D;&#x9700;&#x8981;&#x76F4;&#x63A5;&#x8BBF;&#x95EE; <code>namespace.get(&apos;transaction&apos;)</code>&#xFF0C;&#x56E0;&#x4E3A;&#x6240;&#x6709;&#x67E5;&#x8BE2;&#x90FD;&#x5C06;&#x81EA;&#x52A8;&#x5728;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x4E2D;&#x67E5;&#x627E;&#x4E8B;&#x52A1;&#xFF1A;</p>
+<pre><code class="lang-js">sequelize.transaction(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">t1</span>) </span>{
+  <span class="hljs-comment">// &#x542F;&#x7528; CLS &#x540E;&#xFF0C;&#x5C06;&#x5728;&#x4E8B;&#x52A1;&#x4E2D;&#x521B;&#x5EFA;&#x7528;&#x6237;</span>
+  <span class="hljs-keyword">return</span> User.create({ name: <span class="hljs-string">&apos;Alice&apos;</span> });
+});
+</code></pre>
+<p>&#x5728;&#x4F7F;&#x7528; <code>Sequelize.useCLS()</code> &#x540E;&#xFF0C;&#x4ECE; sequelize &#x8FD4;&#x56DE;&#x7684;&#x6240;&#x6709; promise &#x5C06;&#x88AB;&#x4FEE;&#x8865;&#x4EE5;&#x7EF4;&#x62A4; CLS &#x4E0A;&#x4E0B;&#x6587;&#x3002; CLS &#x662F;&#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x8BFE;&#x9898; - <a href="https://www.npmjs.com/package/cls-bluebird" target="_blank">cls-bluebird</a>&#x7684;&#x6587;&#x6863;&#x4E2D;&#x6709;&#x66F4;&#x591A;&#x7EC6;&#x8282;&#xFF0C;&#x7528;&#x4E8E;&#x4F7F; bluebird promise &#x7684;&#x8865;&#x4E01;&#x4E0E;CLS&#x4E00;&#x8D77;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;:</strong> <em><a href="https://github.com/othiym23/node-continuation-local-storage/issues/98#issuecomment-323503807" target="_blank">&#x5F53;&#x4F7F;&#x7528; cls-hooked &#x8F6F;&#x4EF6;&#x5305;&#x7684;&#x65F6;&#x5019;&#xFF0C;CLS &#x4EC5;&#x652F;&#x6301; async/await</a>. &#x5373;&#x4F7F;, <a href="https://github.com/Jeff-Lewis/cls-hooked/blob/master/README.md" target="_blank">cls-hooked</a> &#x4F9D;&#x9760; <em>&#x8BD5;&#x9A8C;&#x6027;&#x7684; API</em> <a href="https://github.com/nodejs/node/blob/master/doc/api/async_hooks.md" target="_blank">async_hooks</a></em></p>
+<h2 id="&#x5E76;&#x884C;&#x90E8;&#x5206;&#x4E8B;&#x52A1;">&#x5E76;&#x884C;/&#x90E8;&#x5206;&#x4E8B;&#x52A1;</h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x4E00;&#x7CFB;&#x5217;&#x67E5;&#x8BE2;&#x4E2D;&#x6267;&#x884C;&#x5E76;&#x53D1;&#x4E8B;&#x52A1;&#xFF0C;&#x6216;&#x8005;&#x5C06;&#x67D0;&#x4E9B;&#x4E8B;&#x52A1;&#x4ECE;&#x4EFB;&#x4F55;&#x4E8B;&#x52A1;&#x4E2D;&#x6392;&#x9664;&#x3002; &#x4F7F;&#x7528; <code>{transaction: }</code> &#x9009;&#x9879;&#x6765;&#x63A7;&#x5236;&#x67E5;&#x8BE2;&#x6240;&#x5C5E;&#x7684;&#x4E8B;&#x52A1;&#xFF1A;</p>
+<p><strong>&#x8B66;&#x544A;:</strong> <em>SQLite &#x4E0D;&#x80FD;&#x540C;&#x65F6;&#x652F;&#x6301;&#x591A;&#x4E2A;&#x4E8B;&#x52A1;&#x3002;</em></p>
+<h3 id="&#x4E0D;&#x542F;&#x7528;cls">&#x4E0D;&#x542F;&#x7528;CLS</h3>
+<pre><code class="lang-js">sequelize.transaction(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">t1</span>) </span>{
+  <span class="hljs-keyword">return</span> sequelize.transaction(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">t2</span>) </span>{
+    <span class="hljs-comment">// &#x542F;&#x7528;CLS&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x67E5;&#x8BE2;&#x5C06;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528; t2    </span>
+    <span class="hljs-comment">// &#x901A;&#x8FC7; `transaction` &#x9009;&#x9879;&#x6765;&#x5B9A;&#x4E49;/&#x66F4;&#x6539;&#x5B83;&#x4EEC;&#x6240;&#x5C5E;&#x7684;&#x4E8B;&#x52A1;&#x3002;</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.all([
+        User.create({ name: <span class="hljs-string">&apos;Bob&apos;</span> }, { transaction: <span class="hljs-literal">null</span> }),
+        User.create({ name: <span class="hljs-string">&apos;Mallory&apos;</span> }, { transaction: t1 }),
+        User.create({ name: <span class="hljs-string">&apos;John&apos;</span> }) <span class="hljs-comment">// &#x8FD9;&#x5C06;&#x9ED8;&#x8BA4;&#x4E3A; t2</span>
+    ]);
+  });
+});
+</code></pre>
+<h2 id="&#x9694;&#x79BB;&#x7B49;&#x7EA7;">&#x9694;&#x79BB;&#x7B49;&#x7EA7;</h2>
+<p>&#x542F;&#x52A8;&#x4E8B;&#x52A1;&#x65F6;&#x53EF;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x9694;&#x79BB;&#x7B49;&#x7EA7;&#xFF1A;</p>
+<pre><code class="lang-js">Sequelize.Transaction.ISOLATION_LEVELS.READ_UNCOMMITTED <span class="hljs-comment">// &quot;READ UNCOMMITTED&quot;</span>
+Sequelize.Transaction.ISOLATION_LEVELS.READ_COMMITTED <span class="hljs-comment">// &quot;READ COMMITTED&quot;</span>
+Sequelize.Transaction.ISOLATION_LEVELS.REPEATABLE_READ  <span class="hljs-comment">// &quot;REPEATABLE READ&quot;</span>
+Sequelize.Transaction.ISOLATION_LEVELS.SERIALIZABLE <span class="hljs-comment">// &quot;SERIALIZABLE&quot;</span>
+</code></pre>
+<p>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;sequelize &#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x7684;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#x3002; &#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x9694;&#x79BB;&#x7EA7;&#x522B;&#xFF0C;&#x8BF7;&#x4F20;&#x5165;&#x6240;&#x9700;&#x7EA7;&#x522B;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">return</span> sequelize.transaction({
+  isolationLevel: Sequelize.Transaction.ISOLATION_LEVELS.SERIALIZABLE
+  }, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">t</span>) </span>{
+
+  <span class="hljs-comment">//  &#x4F60;&#x7684;&#x4E8B;&#x52A1;</span>
+
+  });
+</code></pre>
+<p><strong>&#x6CE8;&#x610F;:</strong> <em>&#x5728;MSSQL&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;SET ISOLATION LEVEL &#x67E5;&#x8BE2;&#x4E0D;&#x88AB;&#x8BB0;&#x5F55;, &#x6307;&#x5B9A;&#x7684; isolationLevel &#x76F4;&#x63A5;&#x4F20;&#x9012;&#x5230; tedious</em></p>
+<h2 id="&#x975E;&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#xFF08;then-callback&#xFF09;">&#x975E;&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#xFF08;then-callback&#xFF09;</h2>
+<p>&#x975E;&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#x5F3A;&#x5236;&#x60A8;&#x624B;&#x52A8;&#x56DE;&#x6EDA;&#x6216;&#x63D0;&#x4EA4;&#x4EA4;&#x6613;&#x3002; &#x5982;&#x679C;&#x4E0D;&#x8FD9;&#x6837;&#x505A;&#xFF0C;&#x4E8B;&#x52A1;&#x5C06;&#x6302;&#x8D77;&#xFF0C;&#x76F4;&#x5230;&#x8D85;&#x65F6;&#x3002; &#x8981;&#x542F;&#x52A8;&#x975E;&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#xFF0C;&#x8BF7;&#x8C03;&#x7528; <code>sequelize.transaction()</code> &#x800C;&#x4E0D;&#x7528; callback&#xFF08;&#x4F60;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x4F20;&#x9012;&#x4E00;&#x4E2A;&#x9009;&#x9879;&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x5E76;&#x5728;&#x8FD4;&#x56DE;&#x7684; promise &#x4E0A;&#x8C03;&#x7528; <code>then</code>&#x3002; &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;<code>commit()</code> &#x548C; <code>rollback()</code> &#x8FD4;&#x56DE;&#x4E00;&#x4E2A; promise&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">return</span> sequelize.transaction().then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">t</span>) </span>{
+  <span class="hljs-keyword">return</span> User.create({
+    firstName: <span class="hljs-string">&apos;Bart&apos;</span>,
+    lastName: <span class="hljs-string">&apos;Simpson&apos;</span>
+  }, {transaction: t}).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">user</span>) </span>{
+    <span class="hljs-keyword">return</span> user.addSibling({
+      firstName: <span class="hljs-string">&apos;Lisa&apos;</span>,
+      lastName: <span class="hljs-string">&apos;Simpson&apos;</span>
+    }, {transaction: t});
+  }).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> t.commit();
+  }).catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err</span>) </span>{
+    <span class="hljs-keyword">return</span> t.rollback();
+  });
+});
+</code></pre>
+<h2 id="&#x53C2;&#x6570;">&#x53C2;&#x6570;</h2>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;options&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x6765;&#x8C03;&#x7528;<code>transaction</code>&#x65B9;&#x6CD5;&#xFF0C;&#x8FD9;&#x5141;&#x8BB8;&#x914D;&#x7F6E;&#x4E8B;&#x52A1;&#x3002;</p>
+<pre><code class="lang-js"><span class="hljs-keyword">return</span> sequelize.transaction({ <span class="hljs-comment">/* options */</span> });
+</code></pre>
+<p>&#x4EE5;&#x4E0B;&#x9009;&#x9879;&#xFF08;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x503C;&#xFF09;&#x53EF;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-js">{
+  autocommit: <span class="hljs-literal">true</span>,
+  isolationLevel: <span class="hljs-string">&apos;REPEATABLE_READ&apos;</span>,
+  deferrable: <span class="hljs-string">&apos;NOT DEFERRABLE&apos;</span> <span class="hljs-comment">// postgres &#x7684;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;</span>
+}
+</code></pre>
+<p>&#x5728;&#x4E3A; Sequelize &#x5B9E;&#x4F8B;&#x6216;&#x6BCF;&#x4E2A;&#x5C40;&#x90E8;&#x4E8B;&#x52A1;&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;<code>isolationLevel</code>&#x53EF;&#x4EE5;&#x5168;&#x5C40;&#x8BBE;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-js"><span class="hljs-comment">// &#x5168;&#x5C40;</span>
+<span class="hljs-keyword">new</span> Sequelize(<span class="hljs-string">&apos;db&apos;</span>, <span class="hljs-string">&apos;user&apos;</span>, <span class="hljs-string">&apos;pw&apos;</span>, {
+  isolationLevel: Sequelize.Transaction.ISOLATION_LEVELS.SERIALIZABLE
+});
+
+<span class="hljs-comment">// &#x5C40;&#x90E8;</span>
+sequelize.transaction({
+  isolationLevel: Sequelize.Transaction.ISOLATION_LEVELS.SERIALIZABLE
+});
+</code></pre>
+<p><code>deferrable</code> &#x9009;&#x9879;&#x5728;&#x4E8B;&#x52A1;&#x5F00;&#x59CB;&#x540E;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;&#x989D;&#x5916;&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x53EF;&#x9009;&#x5730;&#x5C06;&#x7EA6;&#x675F;&#x68C0;&#x67E5;&#x8BBE;&#x7F6E;&#x4E3A;&#x5EF6;&#x8FDF;&#x6216;&#x7ACB;&#x5373;&#x3002; &#x8BF7;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x4EC5;&#x5728;PostgreSQL&#x4E2D;&#x53D7;&#x652F;&#x6301;&#x3002;</p>
+<pre><code class="lang-js">sequelize.transaction({
+  <span class="hljs-comment">// &#x63A8;&#x8FDF;&#x6240;&#x6709;&#x7EA6;&#x675F;&#xFF1A;</span>
+  deferrable: Sequelize.Deferrable.SET_DEFERRED,
+
+  <span class="hljs-comment">// &#x63A8;&#x8FDF;&#x5177;&#x4F53;&#x7EA6;&#x675F;&#xFF1A;</span>
+  deferrable: Sequelize.Deferrable.SET_DEFERRED([<span class="hljs-string">&apos;some_constraint&apos;</span>]),
+
+  <span class="hljs-comment">// &#x4E0D;&#x63A8;&#x8FDF;&#x7EA6;&#x675F;&#xFF1A;</span>
+  deferrable: Sequelize.Deferrable.SET_IMMEDIATE
+})
+</code></pre>
+<h2 id="&#x4F7F;&#x7528;&#x5176;&#x4ED6;-sequelize-&#x65B9;&#x6CD5;">&#x4F7F;&#x7528;&#x5176;&#x4ED6; Sequelize &#x65B9;&#x6CD5;</h2>
+<p><code>transaction</code> &#x9009;&#x9879;&#x4E0E;&#x5176;&#x4ED6;&#x5927;&#x591A;&#x6570;&#x9009;&#x9879;&#x4E00;&#x8D77;&#x4F7F;&#x7528;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x3002;
+&#x5BF9;&#x4E8E;&#x53D6;&#x503C;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5982; <code>.create</code>, <code>.update()</code>, <code>.updateAttributes()</code> &#x7B49;&#x3002;&#x5E94;&#x8BE5;&#x4F20;&#x9012;&#x7ED9;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x7684;&#x9009;&#x9879;&#x3002;
+&#x5982;&#x679C;&#x4E0D;&#x786E;&#x5B9A;&#xFF0C;&#x8BF7;&#x53C2;&#x9605;API&#x6587;&#x6863;&#x4E2D;&#x7684;&#x7528;&#x4E8E;&#x786E;&#x5B9A;&#x7B7E;&#x540D;&#x7684;&#x65B9;&#x6CD5;&#x3002;</p>
+<h2 id="&#x540E;&#x63D0;&#x4EA4;-hook">&#x540E;&#x63D0;&#x4EA4; hook</h2>
+<p><code>transaction</code> &#x5BF9;&#x8C61;&#x5141;&#x8BB8;&#x8DDF;&#x8E2A;&#x662F;&#x5426;&#x63D0;&#x4EA4;&#x4EE5;&#x53CA;&#x4F55;&#x65F6;&#x63D0;&#x4EA4;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x5C06; <code>afterCommit</code> hook &#x6DFB;&#x52A0;&#x5230;&#x6258;&#x7BA1;&#x548C;&#x975E;&#x6258;&#x7BA1;&#x4E8B;&#x52A1;&#x5BF9;&#x8C61;&#xFF1A;</p>
+<pre><code class="lang-js">sequelize.transaction(t =&gt; {
+  t.afterCommit((transaction) =&gt; {
+    <span class="hljs-comment">// &#x4F60;&#x7684;&#x903B;&#x8F91;&#x7247;&#x6BB5;</span>
+  });
+});
+
+sequelize.transaction().then(t =&gt; {
+  t.afterCommit((transaction) =&gt; {
+    <span class="hljs-comment">// &#x4F60;&#x7684;&#x903B;&#x8F91;&#x7247;&#x6BB5;</span>
+  });
+
+  <span class="hljs-keyword">return</span> t.commit();
+})
+</code></pre>
+<p>&#x4F20;&#x9012;&#x7ED9; <code>afterCommit</code> &#x7684;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x6709;&#x9009;&#x62E9;&#x5730;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x627F;&#x8BFA;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x4E8B;&#x52A1;&#x7684;&#x627F;&#x8BFA;&#x94FE;&#x89E3;&#x6790;&#x4E4B;&#x524D;&#x8FD9;&#x4E2A;&#x627F;&#x8BFA;&#x4F1A;&#x88AB;&#x89E3;&#x6790;&#x3002;</p>
+<p><code>afterCommit</code> &#x5982;&#x679C;&#x4E8B;&#x52A1;&#x56DE;&#x6EDA;&#xFF0C;hook <em>&#x4E0D;&#x4F1A;</em> &#x88AB;&#x63D0;&#x5347;&#x3002;</p>
+<p><code>afterCommit</code> hook &#x4E0D;&#x50CF;&#x6807;&#x51C6; hook&#xFF0C; <em>&#x4E0D;&#x4F1A;</em> &#x4FEE;&#x6539;&#x4E8B;&#x52A1;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x3002;</p>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x5C06; <code>afterCommit</code> hook &#x4E0E;&#x6A21;&#x578B; hook &#x7ED3;&#x5408;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x4E86;&#x89E3;&#x5B9E;&#x4F8B;&#x4F55;&#x65F6;&#x5728;&#x4E8B;&#x52A1;&#x5916;&#x4FDD;&#x5B58;&#x5E76;&#x53EF;&#x7528;</p>
+<pre><code class="lang-js">model.afterSave((instance, options) =&gt; {
+  <span class="hljs-keyword">if</span> (options.transaction) {
+    <span class="hljs-comment">// &#x5728;&#x4E8B;&#x52A1;&#x5185;&#x4FDD;&#x5B58;&#x5B8C;&#x6210;&#xFF0C;&#x7B49;&#x5230;&#x4E8B;&#x52A1;&#x88AB;&#x63D0;&#x4EA4;&#x4EE5;&#x901A;&#x77E5;&#x76D1;&#x542C;&#x5668;&#x5B9E;&#x4F8B;&#x5DF2;&#x88AB;&#x4FDD;&#x5B58;</span>
+    options.transaction.afterCommit(() =&gt; <span class="hljs-comment">/* Notify */</span>)
+    <span class="hljs-keyword">return</span>;
+  }
+  <span class="hljs-comment">// &#x5728;&#x4E8B;&#x52A1;&#x4E4B;&#x5916;&#x4FDD;&#x5B58;&#x5B8C;&#x6210;&#xFF0C;&#x5BF9;&#x4E8E;&#x8C03;&#x7528;&#x8005;&#x6765;&#x8BF4;&#x53EF;&#x4EE5;&#x5B89;&#x5168;&#x5730;&#x83B7;&#x53D6;&#x66F4;&#x65B0;&#x540E;&#x7684;&#x6A21;&#x578B;&#x901A;&#x77E5;</span>
+</code></pre>
+<h2 id="&#x9501;&#x5B9A;">&#x9501;&#x5B9A;</h2>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x9501;&#x6267;&#x884C; <code>transaction</code> &#x5185;&#x7684;&#x67E5;&#x8BE2;</p>
+<pre><code>return User.findAll({
+  limit: 1,
+  lock: true,
+  transaction: t1
+})
+</code></pre><p>&#x4E8B;&#x52A1;&#x5185;&#x7684;&#x67E5;&#x8BE2;&#x53EF;&#x4EE5;&#x8DF3;&#x8FC7;&#x9501;&#x5B9A;&#x7684;&#x884C;</p>
+<pre><code>return User.findAll({
+  limit: 1,
+  lock: true,
+  skipLocked: true,
+  transaction: t2
+})
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="scopes.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 作用域">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"事务","level":"1.13","depth":1,"next":{"title":"升级更新","level":"1.14","depth":1,"ref":"","articles":[{"title":"升级到v4","level":"1.14.1","depth":2,"path":"book/upgrade-to-v4.md","ref":"book/upgrade-to-v4.md","articles":[]},{"title":"升级到v4","level":"1.14.2","depth":2,"path":"book/upgrade-to-v5.md","ref":"book/upgrade-to-v5.md","articles":[]}]},"previous":{"title":"作用域","level":"1.12","depth":1,"path":"book/scopes.md","ref":"book/scopes.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"book/transactions.md","mtime":"2019-01-14T11:58:43.910Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-01-14T15:58:44.077Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

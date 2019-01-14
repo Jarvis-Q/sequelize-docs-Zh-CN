@@ -12,29 +12,10 @@
 
 Sequelize 是一个基于 promise 的 Node.js ORM, 目前支持 Postgres, MySQL, SQLite 和 Microsoft SQL Server. 它具有强大的事务支持, 关联关系, 读取和复制等功能.
 
-## 文档
-
-- [Getting started - 入门](getting-started.md)
-- [Model definition - 模型定义](models-definition.md)
-- [Model usage - 模型使用](models-usage.md)
-- [Querying - 查询](querying.md)
-- [Instances - 实例](instances.md)
-- [Associations - 关联](associations.md)
-- [Transactions - 事务](transactions.md)
-- [Scopes - 作用域](scopes.md)
-- [Hooks - 钩子](hooks.md)
-- [Raw queries - 原始查询](raw-queries.md)
-- [Migrations - 迁移](migrations.md)
-- [Upgrade to V4 - 升级到 V4](upgrade-to-v4.md)
-- [Upgrade to V5 - 升级到 V5](upgrade-to-v5.md)
-- [Working with legacy tables - 使用遗留表](legacy.md)
-
-
-
 
 ## 使用示例
 
-[Basic usage - 基本用法](usage.md)
+[Basic usage - 基本用法](./book/usage.md)
 
 ```js
 const Sequelize = require('sequelize');
@@ -71,4 +52,4 @@ sequelize.sync()
   });
 ```
 
-请通过 [Getting started - 入门](getting-started.md) 来学习更多相关内容。 如果你想要学习 Sequelize API 请通过 [API Reference](http://docs.sequelizejs.com/identifiers) (英文)。
+请通过 [Getting started - 入门](./book/getting-started.md) 来学习更多相关内容。 如果你想要学习 Sequelize API 请通过 [API Reference](http://docs.sequelizejs.com/identifiers) (英文)。
